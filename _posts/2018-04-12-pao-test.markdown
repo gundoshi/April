@@ -1,0 +1,7 @@
+---
+layout: post
+title:  "TESTING"
+---
+
+Hola, soy Doraemon and watashiwa need ur Halp.?
+![snow?]({{ "/images/snow.jpg" | absolute_url }})
