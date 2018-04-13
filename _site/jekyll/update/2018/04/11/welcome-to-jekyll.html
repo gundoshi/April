@@ -22,14 +22,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="theme-color" content="#157878">
     <link rel="stylesheet" href="/assets/css/style.css?v=">
+    <script
+    src="https://code.jquery.com/jquery-3.3.1.js">
+    </script>
+    <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
   </head>
   <body>
     <section class="page-header">
-      <h1 class="project-name">Ape Blog</h1>
-      <h2 class="project-tagline">This is a test site eheh</h2>
+      <!-- <h1 class="project-name">Ape Blog</h1> -->
+      <!-- <h2 class="project-tagline">This is a test site eheh</h2>
       
-      
+       -->
     </section>
+
+    <nav>
+      <div class="logo"> Pao Blog</div>
+      <ul>
+        <li><a href="/home/"> Home </a> </li>
+        <li><a href="/about/"> About </a> </li>
+        <!-- <li><a href=""> Posts </a> </li> -->
+      </ul>
+    </nav>
 
     <section class="main-content">
       <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
@@ -68,5 +81,16 @@
     </section>
 
     
+
+    <!-- scroll script -->
+    <script type="text/javascript">
+    $(window).on("scroll", function() {
+      if($(window).scrollTop()) {
+        $('nav').addClass('black');
+      } else {
+        $('nav').removeClass('black');
+      }
+    })
+  </script>
   </body>
 </html>

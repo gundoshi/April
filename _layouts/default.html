@@ -7,19 +7,32 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="theme-color" content="#157878">
     <link rel="stylesheet" href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}">
+    <script
+    src="https://code.jquery.com/jquery-3.3.1.js">
+    </script>
+    <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
   </head>
   <body>
     <section class="page-header">
-      <h1 class="project-name">{{ site.title | default: site.github.repository_name }}</h1>
-      <h2 class="project-tagline">{{ site.description | default: site.github.project_tagline }}</h2>
-      {% if site.github.is_project_page %}
-        <a href="{{ site.github.repository_url }}" class="btn">View on GitHub</a>
+      <!-- <h1 class="project-name">{{ site.title | default: site.github.repository_name }}</h1> -->
+      <!-- <h2 class="project-tagline">{{ site.description | default: site.github.project_tagline }}</h2>
+      {% if site.github.is_project_page %} -->
+        <!-- <a href="{{ site.github.repository_url }}" class="btn">View on GitHub</a>
       {% endif %}
       {% if site.show_downloads %}
         <a href="{{ site.github.zip_url }}" class="btn">Download .zip</a>
         <a href="{{ site.github.tar_url }}" class="btn">Download .tar.gz</a>
-      {% endif %}
+      {% endif %} -->
     </section>
+
+    <nav>
+      <div class="logo"> Pao Blog</div>
+      <ul>
+        <li><a href="/home/"> Home </a> </li>
+        <li><a href="/about/"> About </a> </li>
+        <!-- <li><a href=""> Posts </a> </li> -->
+      </ul>
+    </nav>
 
     <section class="main-content">
       {{ content }}
@@ -43,5 +56,16 @@
         ga('send', 'pageview');
       </script>
     {% endif %}
+
+    <!-- scroll script -->
+    <script type="text/javascript">
+    $(window).on("scroll", function() {
+      if($(window).scrollTop()) {
+        $('nav').addClass('black');
+      } else {
+        $('nav').removeClass('black');
+      }
+    })
+  </script>
   </body>
 </html>
