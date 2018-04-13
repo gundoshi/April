@@ -2,6 +2,12 @@
 ---
 
 @import "{{ site.theme }}";
+body {
+  @media screen and (max-width: 600px) {
+  padding: 15px;
+  }
+}
+
 .page-header {
   background: white;
 }

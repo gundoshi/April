@@ -809,6 +809,10 @@ a {
 .site-footer-credits {
   color: #819198; }
 
+@media screen and (max-width: 600px) {
+  body {
+    padding: 15px; } }
+
 .page-header {
   background: white; }
 
