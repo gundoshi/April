@@ -818,50 +818,31 @@ nav {
   top: 0;
   left: 0;
   width: 100%;
-  height: 100px;
+  padding: 0.75rem 1rem;
   box-sizing: border-box;
   transition: .3s; }
-  @media screen and (min-width: 64em) {
+  @media screen and (max-width: 600px) {
     nav {
-      padding: 0.75rem 1rem; } }
-  @media screen and (min-width: 42em) and (max-width: 64em) {
-    nav {
-      padding: 0.6rem 0.9rem;
-      font-size: 0.9rem; } }
-  @media screen and (max-width: 42em) {
-    nav {
-      display: block;
-      width: 100%;
-      padding: 0.75rem;
-      font-size: 0.9rem; } }
+      padding: 12px 30px; } }
 
 nav.black {
   background: white;
-  opacity: 0.5;
-  height: 100px;
-  padding: 10px 100px; }
-  @media screen and (min-width: 64em) {
-    nav.black {
-      padding: 0.75rem 1rem; } }
-  @media screen and (min-width: 42em) and (max-width: 64em) {
-    nav.black {
-      padding: 0.6rem 0.9rem;
-      font-size: 0.9rem; } }
-  @media screen and (max-width: 42em) {
-    nav.black {
-      display: block;
-      width: 100%;
-      padding: 0.75rem;
-      font-size: 0.9rem; } }
+  opacity: 0.5; }
 
 nav .logo {
-  padding: 22px 20px;
-  height: 80px;
+  margin: 0;
+  padding: 12px 30px;
   float: left;
-  font-size: 30px;
+  font-size: 2rem;
   transition: .3s;
   text-transform: uppercase;
   color: white; }
+  @media screen and (max-width: 600px) {
+    nav .logo {
+      float: left;
+      padding: 1.2rem 1rem;
+      font-size: 1.3rem;
+      display: block; } }
 
 nav.black .logo {
   color: black; }
