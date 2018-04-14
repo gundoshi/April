@@ -817,7 +817,7 @@ a {
   background: white; }
 
 nav {
-  background-image: linear-gradient(113.2915527569deg, #d05a55 4.9270833333%, #311240 97.84375%);
+  background-image: linear-gradient(113.2915527569deg, #759e9c 4.9270833333%, #9c619c 97.84375%);
   position: fixed;
   top: 0;
   left: 0;
@@ -830,6 +830,8 @@ nav {
       padding: 12px 30px; } }
 
 nav.black {
+  height: 5;
+  padding: 0rem 0.5rem;
   background: white;
   opacity: 0.5; }
 
@@ -850,6 +852,12 @@ nav .logo {
 
 nav.black .logo {
   color: black; }
+  @media screen and (max-width: 600px) {
+    nav.black .logo {
+      float: left;
+      padding: 1rem 0.2rem;
+      font-size: 1.3rem;
+      display: block; } }
 
 nav ul {
   list-style: none;
@@ -870,7 +878,7 @@ nav ul li a {
   transition: .3s; }
   @media screen and (max-width: 600px) {
     nav ul li a {
-      padding: 12px 15px; } }
+      padding: 6px 15px; } }
 
 nav.black ul li a {
   color: black; }
